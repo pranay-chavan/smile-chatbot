@@ -92,3 +92,41 @@ npm run dev
 ## 📄 License
 
 MIT
+
+---
+
+## 📁 Project Structure
+
+**src/components** — Reusable UI components
+
+| File | Purpose |
+|------|---------|
+| ChatBox.jsx | Main chat layout, message list and scroll |
+| Message.jsx | Individual chat bubble (user and AI) |
+| InputBox.jsx | Text input with auto resize and send button |
+| Footer.jsx | Social links footer |
+| ProtectedRoute.jsx | Blocks unauthenticated users from chat page |
+
+**src/pages** — App pages
+
+| File | Purpose |
+|------|---------|
+| Home.jsx | Main chat page with AI integration |
+| Login.jsx | Login with Google, GitHub, Email or Phone |
+| Signup.jsx | Register with email and password |
+
+**src/context** — Global state
+
+| File | Purpose |
+|------|---------|
+| AuthContext.jsx | Stores logged in user, loading state and logout function |
+
+**Root files**
+
+| File | Purpose |
+|------|---------|
+| firebase.js | Firebase app init and auth providers |
+| App.jsx | Routes and auth protection setup |
+| App.css | Global CSS variables and base styles |
+| vite.config.js | Vite config with Hugging Face API proxy |
+| vercel.json | Fixes page refresh 404 on Vercel |
