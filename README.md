@@ -1,5 +1,7 @@
 # 😊 Smile Chatbot
 
+https://smile-chatbot.vercel.app
+
 A full-stack AI chatbot built with React, powered by Meta's Llama 3.1 via Hugging Face, with Firebase authentication and deployed on Vercel.
 
 ---
