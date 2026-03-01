@@ -61,7 +61,7 @@ export default function Home() {
 
     try {
       const response = await fetch(
-        '/hf-router/v1/chat/completions',
+        'https://router.huggingface.co/v1/chat/completions',
         {
           method: 'POST',
           headers: {

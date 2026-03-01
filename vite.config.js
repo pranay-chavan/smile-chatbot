@@ -9,6 +9,11 @@ export default defineConfig({
         target: 'https://router.huggingface.co',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/hf-router/, ''),
+        configure: (proxy) => {
+          proxy.on('proxyReq', (proxyReq) => {
+            proxyReq.setHeader('Origin', 'https://router.huggingface.co')
+          })
+        },
       },
     },
   },
